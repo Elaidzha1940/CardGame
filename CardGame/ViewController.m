@@ -9,10 +9,15 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
-
+@property (nonatomic) int flipCount;
+ 
 @end
 
 @implementation ViewController
+- (void)setFlipsCount:(int)flipCount {
+    _flipCount = flipCount;
+    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +35,7 @@
                           forState:UIControlStateNormal];
         [sender setTitle:@"" forState:UIControlStateNormal];
     }
+    self.flipCount++;
 }
 
 @end
