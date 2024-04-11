@@ -19,7 +19,16 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    UIImage *cardImage = [UIImage imageNamed:@"cardback"];
+    
+    if ([sender.currentTitle length]) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    } else {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }
 }
 
 @end
