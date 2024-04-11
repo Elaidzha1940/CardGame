@@ -15,7 +15,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //
+}
+
+- (IBAction)touchCardButton:(UIButton *)sender {
+    UIImage *cardImage = [UIImage imageNamed:@"cardback"];
 }
 
 @end
