@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdP-bB-sI8">
-                                <rect key="frame" x="151" y="367" width="91" height="118"/>
+                                <rect key="frame" x="132" y="341" width="129" height="170"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="A♠️">
                                     <backgroundConfiguration key="background" image="cardfront"/>
@@ -28,16 +29,26 @@
                                     <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0U-GC-or7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byN-AK-Y8t">
+                                <rect key="frame" x="278" y="727" width="83" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="jdP-bB-sI8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="308" id="OCd-YO-Ux9"/>
-                            <constraint firstItem="jdP-bB-sI8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qu2-ve-b6s"/>
-                            <constraint firstItem="jdP-bB-sI8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e5z-og-R2r"/>
-                            <constraint firstItem="jdP-bB-sI8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="u3O-Gf-9JE"/>
+                            <constraint firstItem="jdP-bB-sI8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BsA-BX-oDU"/>
+                            <constraint firstItem="jdP-bB-sI8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="282" id="c2x-9L-lol"/>
+                            <constraint firstItem="jdP-bB-sI8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="dWn-sV-C4M"/>
+                            <constraint firstItem="jdP-bB-sI8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kJ9-5j-Itw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flipsLabel" destination="byN-AK-Y8t" id="aLA-i0-cIv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
