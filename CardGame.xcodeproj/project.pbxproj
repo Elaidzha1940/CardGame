@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E401AB602BC86006001F353B /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = E401AB5F2BC86006001F353B /* Card.m */; };
 		E4820AE82BC755060087D874 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4820AE72BC755060087D874 /* AppDelegate.m */; };
 		E4820AEB2BC755060087D874 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4820AEA2BC755060087D874 /* SceneDelegate.m */; };
 		E4820AEE2BC755060087D874 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4820AED2BC755060087D874 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E401AB5F2BC86006001F353B /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		E4820AE32BC755060087D874 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4820AE62BC755060087D874 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4820AE72BC755060087D874 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E401AB622BC86073001F353B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E401AB5F2BC86006001F353B /* Card.m */,
+			);
+			name = Model;
+			path = "New Group/Model";
+			sourceTree = "<group>";
+		};
 		E4820ADA2BC755060087D874 = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +72,14 @@
 		E4820AE52BC755060087D874 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
+				E4820AEF2BC755060087D874 /* Main.storyboard */,
+				E4820AEC2BC755060087D874 /* ViewController.h */,
+				E4820AED2BC755060087D874 /* ViewController.m */,
+				E401AB622BC86073001F353B /* Model */,
 				E4820AE62BC755060087D874 /* AppDelegate.h */,
 				E4820AE72BC755060087D874 /* AppDelegate.m */,
 				E4820AE92BC755060087D874 /* SceneDelegate.h */,
 				E4820AEA2BC755060087D874 /* SceneDelegate.m */,
-				E4820AEC2BC755060087D874 /* ViewController.h */,
-				E4820AED2BC755060087D874 /* ViewController.m */,
-				E4820AEF2BC755060087D874 /* Main.storyboard */,
 				E4820AF22BC755070087D874 /* Assets.xcassets */,
 				E4820AF42BC755070087D874 /* LaunchScreen.storyboard */,
 				E4820AF72BC755070087D874 /* Info.plist */,
@@ -146,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E401AB602BC86006001F353B /* Card.m in Sources */,
 				E4820AEE2BC755060087D874 /* ViewController.m in Sources */,
 				E4820AE82BC755060087D874 /* AppDelegate.m in Sources */,
 				E4820AF92BC755070087D874 /* main.m in Sources */,
